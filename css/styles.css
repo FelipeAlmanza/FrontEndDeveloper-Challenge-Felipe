@@ -4,6 +4,9 @@
   --primaryBlue: #004a80;
   --primaryYellow: #f6bc25;
   --defaultWhite: #ffffff;
+  --footerText: #999999;
+  --secondaryText: #4a4a4a;
+  --gradientGray: #e6e6e6;
 }
 
 .primaryBlue {
@@ -18,12 +21,30 @@
   color: var(--defaultWhite);
 }
 
+.footerTextColor {
+  color: var(--footerText);
+}
+
+.secondaryTextColor {
+  color: var(--secondaryText);
+}
+
 .searchBoxContainer {
   background-color: var(--primaryBlue);
 }
 
 .additionalInfoContainer {
   padding-top: 30px;
+  background-image: linear-gradient(
+    0deg,
+    var(--gradientGray) 0%,
+    var(--defaultWhite) 100%
+  );
+}
+
+.infoContainer {
+  padding-top: 20px;
+  margin: 0 auto;
 }
 
 /* custom color for nav bar */
@@ -31,12 +52,47 @@
   background-color: var(--primaryBlue);
 }
 
+#footerPlaceHolder {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h4.detail {
+  color: ;
+}
+
 /* Used to align different html element on the same line */
 #sameLine h4,
-h5,
-img {
+#sameLine h5,
+#sameLine h6,
+#sameLine img,
+#sameLine a,
+#sameLine p {
   display: inline;
   vertical-align: top;
 
   line-height: 28px;
+}
+
+.circle {
+  background: var(--primaryBlue);
+  line-height: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: var(--primaryYellow);
+  text-align: center;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.formContainer {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
 }
