@@ -1,0 +1,42 @@
+/* CSS file for stylinh */
+
+:root {
+  --primaryBlue: #004a80;
+  --primaryYellow: #f6bc25;
+  --defaultWhite: #ffffff;
+}
+
+.primaryBlue {
+  color: var(--primaryBlue);
+}
+
+.primaryYellow {
+  color: var(--primaryYellow);
+}
+
+.defaultWhite {
+  color: var(--defaultWhite);
+}
+
+.searchBoxContainer {
+  background-color: var(--primaryBlue);
+}
+
+.additionalInfoContainer {
+  padding-top: 30px;
+}
+
+/* custom color for nav bar */
+.navbar-custom {
+  background-color: var(--primaryBlue);
+}
+
+/* Used to align different html element on the same line */
+#sameLine h4,
+h5,
+img {
+  display: inline;
+  vertical-align: top;
+
+  line-height: 28px;
+}

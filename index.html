@@ -7,26 +7,106 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
     <meta
       name="description"
       content="Look up the owner's name, photos and online profiles. See what you find!"
     />
+
     <meta name="author" content="Felipe Almanza" />
+
     <title>
       Look up the owner's name, photos and online profiles. See what you find!
     </title>
 
+    <!-- Stylesheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
+    <!-- Placeholder for loading navigation bar from script -->
     <header id="navPlaceholder"></header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-custom">
       <a class="navbar-brand" href="index.html">
         <img src="assets/PNGs/Logo@2x.png" alt="logo" />
       </a>
     </nav>
+
+    <!-- Search box container -->
+    <div class="searchBoxContainer">
+      <h1 class="defaultWhite">Search Any Email Address</h1>
+
+      <div id="sameLine">
+        <h4 class="primaryYellow">Start Here</h4>
+        <h4 class="defaultWhite">
+          - Look up the owner's name, photos and online profiles. See what you
+          find!
+        </h4>
+      </div>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="EMAIL" />
+
+        <button type="button" class="btn rounded">GO!</button>
+      </div>
+
+      <div id="sameLine">
+        <img src="assets/SVGs/lock.svg" alt="lock" />
+
+        <h5 class="primaryYellow">
+          Enter Any Email Address. They won't be notified.
+        </h5>
+      </div>
+    </div>
+
+    <!-- Additional information container -->
+    <div class="additionalInfoContainer">
+      <h1 class="primaryBlue">Reverse Email Lookup</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3 class="spacing2">Lorem Ipsum</h3>
+          </div>
+
+          <div class="col-sm">
+            <h3 class="spacing2">Lorem Ipsum</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <h3 class="spacing2">Lorem Ipsum</h3>
+          </div>
+
+          <div class="col-sm">
+            <h3 class="spacing2">Lorem Ipsum</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <h3 class="spacing2">Lorem Ipsum</h3>
+          </div>
+
+          <div class="col-sm">
+            <h3 class="spacing2">Lorem Ipsum</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Placeholder to load footer from a script -->
+    <footer id="footerPlaceHolder"></footer>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
