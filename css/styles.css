@@ -7,6 +7,8 @@
   --footerText: #999999;
   --secondaryText: #4a4a4a;
   --gradientGray: #e6e6e6;
+  --buttonNotHovered: #f2da56;
+  --errorColor: #dc0015;
 }
 
 .primaryBlue {
@@ -52,7 +54,15 @@
   background-color: var(--primaryBlue);
 }
 
-#footerPlaceHolder {
+.btn-custom {
+  background-color: var(--buttonNotHovered);
+}
+
+.btn-custom:hover {
+  background-color: var(--primaryYellow);
+}
+
+. #footerPlaceHolder {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -91,4 +101,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0 auto;
+}
+
+.error {
+  color: var(--defaultWhite);
+  background-color: var(--errorColor);
 }
