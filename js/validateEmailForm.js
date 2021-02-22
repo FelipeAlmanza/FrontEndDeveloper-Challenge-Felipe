@@ -18,9 +18,12 @@ $(document).ready(function () {
       const email = document.getElementById("email").value;
 
       // Code for hiding elements in screen and then display a loading modal
-      document.getElementById("searchBoxContainer").style.visibility = "hidden";
+      document.getElementById("searchBoxContainerId").style.visibility =
+        "hidden";
+
       document.getElementById("additionalInfoContainer").style.visibility =
         "hidden";
+
       document.getElementById("modal").style.display = "block";
 
       let redirectLocation = "results.html";

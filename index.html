@@ -27,7 +27,56 @@
 
     <main>
       <!-- Search box container -->
-      <div id="searchBoxContainer" class="searchBoxContainer"></div>
+      <div id="searchBoxContainerId" class="searchBoxContainer">
+        <h1 id="searchText" class="defaultWhite centerText">
+          Search Any Email Address
+        </h1>
+
+        <div id="sameLine" class="centerText">
+          <h4 id="searchHint" class="primaryYellow">"Start Here"</h4>
+
+          <h4 id="searchInfo" class="defaultWhite">
+            "- Look up the owner's name, photos and online profiles. See what
+            you find!"
+          </h4>
+        </div>
+
+        <!-- Input form -->
+        <form id="emailForm" action="" onsubmit="">
+          <div class="formContainer row form-group">
+            <div class="col-10">
+              <input
+                id="email"
+                class="form-control emailInput"
+                name="email"
+                type="email"
+                placeholder="EMAIL"
+              />
+            </div>
+            <div class="col-1">
+              <button
+                type="submit"
+                value="Submit"
+                class="btn btn-custom rounded"
+              >
+                GO!
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div id="sameLine">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <img src="assets/SVGs/lock.svg" alt="lock" />
+              <h6 class="primaryYellow">
+                Enter Any Email Address. They won't be notified.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Additional information container -->
       <div id="additionalInfoContainer" class="additionalInfoContainer">
@@ -159,12 +208,6 @@
     ></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-
-    <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
@@ -177,7 +220,7 @@
 
     <script src="js/jquery.validate.js"></script>
     <script src="js/loadElements.js"></script>
+    <!-- <script src="js/loadSearchBox.js"></script> -->
     <script src="js/validateEmailForm.js"></script>
-    <script src="js/loadSearchBox.js"></script>
   </body>
 </html>
