@@ -1,1 +1,0 @@
-$("#navPlaceholder").load("navHeader.html");

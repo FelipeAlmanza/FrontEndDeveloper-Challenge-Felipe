@@ -31,156 +31,176 @@
       </a>
     </nav>
 
-    <!-- Search box container -->
-    <div class="searchBoxContainer">
-      <h1 class="defaultWhite centerText">Search Any Email Address</h1>
+    <main>
+      <!-- Search box container -->
+      <div id="searchBoxContainer" class="searchBoxContainer">
+        <h1 class="defaultWhite centerText">Search Any Email Address</h1>
 
-      <div id="sameLine" class="centerText">
-        <h4 class="primaryYellow">Start Here</h4>
+        <div id="sameLine" class="centerText">
+          <h4 class="primaryYellow">Start Here</h4>
 
-        <h4 class="defaultWhite">
-          - Look up the owner's name, photos and online profiles. See what you
-          find!
-        </h4>
+          <h4 class="defaultWhite">
+            - Look up the owner's name, photos and online profiles. See what you
+            find!
+          </h4>
+        </div>
+
+        <!-- Input form -->
+        <form id="emailForm" action="" onsubmit="">
+          <div class="formContainer row form-group">
+            <div class="col-10">
+              <input
+                id="email"
+                class="form-control emailInput"
+                name="email"
+                type="email"
+                placeholder="EMAIL"
+              />
+            </div>
+            <div class="col-1">
+              <button
+                type="submit"
+                value="Submit"
+                class="btn btn-custom rounded"
+              >
+                GO!
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div id="sameLine">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <img src="assets/SVGs/lock.svg" alt="lock" />
+              <h6 class="primaryYellow">
+                Enter Any Email Address. They won't be notified.
+              </h6>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Input form -->
-      <form id="emailForm" action="" onsubmit="return hacer()">
-        <div class="formContainer row form-group">
+      <!-- Additional information container -->
+      <div id="additionalInfoContainer" class="additionalInfoContainer">
+        <div class="row">
+          <div class="col-1"></div>
+
           <div class="col-10">
-            <input
-              id="email"
-              class="form-control emailInput"
-              name="email"
-              type="email"
-              placeholder="EMAIL"
-            />
+            <h1 class="centerText primaryBlue">Reverse Email Lookup</h1>
+
+            <p class="centerText secondaryTextColor">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
-          <div class="col-1">
-            <button type="submit" value="Submit" class="btn btn-custom rounded">
-              GO!
-            </button>
-          </div>
+          <div class="col-1"></div>
         </div>
-      </form>
 
-      <div id="sameLine">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-8">
-            <img src="assets/SVGs/lock.svg" alt="lock" />
-            <h6 class="primaryYellow">
-              Enter Any Email Address. They won't be notified.
-            </h6>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="infoContainer container">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="circle">1</div>
+                <div class="col">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    <!-- Additional information container -->
-    <div class="additionalInfoContainer">
-      <div class="row">
-        <div class="col-1"></div>
-
-        <div class="col-10">
-          <h1 class="centerText primaryBlue">Reverse Email Lookup</h1>
-
-          <p class="centerText secondaryTextColor">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <div class="col-1"></div>
-      </div>
-
-      <div class="infoContainer container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="row">
-              <div class="circle">1</div>
-              <div class="col-sm">
-                <h4>Lorem Ipsum</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+            <div class="col">
+              <div class="row">
+                <div class="circle">4</div>
+                <div class="col">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-sm">
-            <div class="row">
-              <div class="circle">4</div>
-              <div class="col-sm">
-                <h4>Lorem Ipsum</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="circle">2</div>
+                <div class="col">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-sm">
-            <div class="row">
-              <div class="circle">2</div>
-              <div class="col-sm">
-                <h4>Lorem Ipsum</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm">
-            <div class="row">
-              <div class="circle">4</div>
-              <div class="col-sm">
-                <h4>Lorem Ipsum</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm">
-            <div class="row">
-              <div class="circle">3</div>
-              <div class="col-sm">
-                <h4>Lorem Ipsum</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+            <div class="col">
+              <div class="row">
+                <div class="circle">5</div>
+                <div class="col">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-sm">
-            <div class="row">
-              <div class="circle">6</div>
-              <div class="col-sm">
-                <h4>Lorem Ipsum</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="circle">3</div>
+                <div class="col">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="row">
+                <div class="circle">6</div>
+                <div class="col">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- Modal for loading search page -->
+      <div id="modal" class="modal">
+        <div class="center">
+          <img alt="" src="assets/loading_spinner.gif" />
+          <h5>Please wait a moment...</h5>
+        </div>
+      </div>
+    </main>
 
     <!-- Placeholder to load footer from a script -->
     <footer id="footerPlaceHolder">
@@ -228,7 +248,7 @@
     ></script>
 
     <script src="js/jquery.validate.js"></script>
-    <script src="js/loadNavBar.js"></script>
+    <script src="js/loadHeaderAndFooter.js"></script>
     <script src="js/validateEmailForm.js"></script>
   </body>
 </html>
