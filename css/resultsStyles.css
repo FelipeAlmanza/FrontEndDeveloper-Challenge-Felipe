@@ -1,0 +1,40 @@
+@import url(styles.css);
+
+/* Styling results page */
+
+:root {
+  --background-grey: #f8f8f8;
+}
+
+body {
+  background-color: var(--background-grey);
+}
+
+/* Style in case of no results */
+.textInfoContainer.noResults {
+  padding: 70px 0;
+}
+
+/* Style in case of results */
+.textInfoContainer.results {
+  margin-top: 30px;
+}
+
+.detailsContainer {
+  border: 2px solid lightgray;
+  border-radius: 25px;
+  background: var(--defaultWhite);
+  margin-bottom: 20px;
+}
+
+.detailsIcon {
+  background-color: var(--primaryBlue);
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.firstRow {
+  margin-top: 30px;
+}

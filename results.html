@@ -34,13 +34,74 @@
 
     <main>
       <!-- Text info container -->
-      <div class="container">
-        <h1 class="centerText primaryBlue">Hola</h1>
+      <div class="textInfoContainer flex-container">
+        <h1 id="resultsText" class="centerText primaryBlue">Hola</h1>
+        <h5 id="resultsExtraText" class="centerText">Test text</h5>
+      </div>
+
+      <!-- Details In case of results placeholder -->
+      <div class="row">
+        <div class="col-2"></div>
+
+        <div class="col">
+          <div id="detailsContainer" class="detailsContainer">
+            <div class="row firstRow">
+              <div class="col-1"></div>
+              <div class="col-1">
+                <!-- Hide image on devices smaller than a tablet -->
+                <img
+                  class="detailsIcon d-none d-md-block"
+                  src="assets/SVGs/icn_person.svg"
+                  alt="person icon in details"
+                />
+              </div>
+              <div class="col-8">
+                <h2 class="primaryBlue">Name</h2>
+                <p>Name placeholder</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-2"></div>
+
+              <div class="col">
+                <h5 class="primaryBlue">Address</h5>
+                <p>Address placeholder</p>
+              </div>
+
+              <div class="col">
+                <h5 class="primaryBlue">Phone Numbers</h5>
+                <!-- Placeholder for displaying multiple numbers -->
+                <div class="primaryBlue" id="phoneNumbers"></div>
+              </div>
+
+              <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-2"></div>
+
+              <div class="col">
+                <h5 class="primaryBlue">Email</h5>
+                <p>Email placeholder</p>
+              </div>
+
+              <div class="col">
+                <h5 class="primaryBlue">Relatives</h5>
+                <div id="relativeList"></div>
+              </div>
+
+              <div class="col-1"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2"></div>
       </div>
     </main>
 
     <!-- Placeholder to load footer from a script -->
-    <footer class="footer fixed-bottom" id="footerPlaceHolder">
+    <footer id="footerPlaceHolder">
       <div class="row">
         <div class="col-1"></div>
         <div class="col-8">
