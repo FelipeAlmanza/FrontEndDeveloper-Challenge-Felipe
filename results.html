@@ -26,78 +26,77 @@
     <!-- Placeholder for loading navigation bar from script -->
     <header id="navPlaceholder"></header>
 
-    <nav class="navbar navbar-custom">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/PNGs/Logo@2x.png" alt="logo" />
-      </a>
-    </nav>
-
     <main>
       <!-- Text info container -->
-      <div class="textInfoContainer flex-container">
-        <h1 id="resultsText" class="centerText primaryBlue">Hola</h1>
+      <div id="textInfoContainer" class="textInfoContainer flex-container">
+        <h1 id="resultsText" class="centerText primaryBlue">Results</h1>
         <h5 id="resultsExtraText" class="centerText">Test text</h5>
       </div>
 
       <!-- Details In case of results placeholder -->
-      <div class="row">
-        <div class="col-2"></div>
+      <div class="detailsContainer" id="detailsContainer">
+        <div class="row">
+          <div class="col-2"></div>
 
-        <div class="col">
-          <div id="detailsContainer" class="detailsContainer">
-            <div class="row firstRow">
-              <div class="col-1"></div>
-              <div class="col-1">
-                <!-- Hide image on devices smaller than a tablet -->
-                <img
-                  class="detailsIcon d-none d-md-block"
-                  src="assets/SVGs/icn_person.svg"
-                  alt="person icon in details"
-                />
-              </div>
-              <div class="col-8">
-                <h2 class="primaryBlue">Name</h2>
-                <p>Name placeholder</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-2"></div>
-
-              <div class="col">
-                <h5 class="primaryBlue">Address</h5>
-                <p>Address placeholder</p>
+          <div class="col">
+            <div class="detailsBox">
+              <div class="row firstRow">
+                <div class="col-1"></div>
+                <div class="col-1">
+                  <!-- Hide image on devices smaller than a tablet -->
+                  <img
+                    class="detailsIcon d-none d-md-block"
+                    src="assets/SVGs/icn_person.svg"
+                    alt="person icon in details"
+                  />
+                </div>
+                <div class="col-8">
+                  <h2 id="nameField" class="primaryBlue">Name</h2>
+                  <p id="descriptionField">Name placeholder</p>
+                </div>
               </div>
 
-              <div class="col">
-                <h5 class="primaryBlue">Phone Numbers</h5>
-                <!-- Placeholder for displaying multiple numbers -->
-                <div class="primaryBlue" id="phoneNumbers"></div>
+              <div class="row">
+                <div class="col-2"></div>
+
+                <div class="col">
+                  <h5 class="primaryBlue">Address</h5>
+                  <p id="addressField">Address placeholder</p>
+                </div>
+
+                <div class="col">
+                  <h5 class="primaryBlue">Phone Numbers</h5>
+                  <!-- Placeholder for displaying multiple numbers -->
+                  <div class="primaryBlue" id="phoneNumbers"></div>
+                </div>
+
+                <div class="col-1"></div>
               </div>
 
-              <div class="col-1"></div>
-            </div>
+              <div class="row">
+                <div class="col-2"></div>
 
-            <div class="row">
-              <div class="col-2"></div>
+                <div class="col">
+                  <h5 class="primaryBlue">Email</h5>
+                  <p id="emailField">Email placeholder</p>
+                </div>
 
-              <div class="col">
-                <h5 class="primaryBlue">Email</h5>
-                <p>Email placeholder</p>
+                <div class="col">
+                  <h5 class="primaryBlue">Relatives</h5>
+                  <div id="relativeList"></div>
+                </div>
+
+                <div class="col-1"></div>
               </div>
-
-              <div class="col">
-                <h5 class="primaryBlue">Relatives</h5>
-                <div id="relativeList"></div>
-              </div>
-
-              <div class="col-1"></div>
             </div>
           </div>
-        </div>
 
-        <div class="col-2"></div>
+          <div class="col-2"></div>
+        </div>
       </div>
+
+      <!-- Search container -->
+      <div></div>
     </main>
 
     <!-- Placeholder to load footer from a script -->
@@ -148,5 +147,6 @@
     <script src="js/jquery.validate.js"></script>
     <script src="js/loadHeaderAndFooter.js"></script>
     <script src="js/validateEmailForm.js"></script>
+    <script src="js/loadResults.js"></script>
   </body>
 </html>

@@ -10,6 +10,10 @@ body {
   background-color: var(--background-grey);
 }
 
+.textInfoContainer {
+  display: none;
+}
+
 /* Style in case of no results */
 .textInfoContainer.noResults {
   padding: 70px 0;
@@ -21,6 +25,11 @@ body {
 }
 
 .detailsContainer {
+  margin-top: 20px;
+  display: none;
+}
+
+.detailsBox {
   border: 2px solid lightgray;
   border-radius: 25px;
   background: var(--defaultWhite);
