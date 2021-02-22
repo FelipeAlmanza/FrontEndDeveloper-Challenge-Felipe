@@ -42,7 +42,10 @@ main {
 }
 
 .searchBoxContainer {
-  background-color: var(--primaryBlue);
+  display: none;
+  padding-top: 50px;
+  background: var(--primaryBlue);
+  padding-bottom: 50px;
 }
 
 .additionalInfoContainer {
@@ -62,6 +65,17 @@ main {
 /* custom color for nav bar */
 .navbar-custom {
   background-color: var(--primaryBlue);
+}
+
+.navbar-brand img {
+  padding-top: 10px;
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+li.nav-item {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .btn-custom {

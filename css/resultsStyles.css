@@ -33,7 +33,7 @@ body {
   border: 2px solid lightgray;
   border-radius: 25px;
   background: var(--defaultWhite);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .detailsIcon {
